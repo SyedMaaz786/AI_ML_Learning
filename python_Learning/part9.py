@@ -151,13 +151,8 @@ class Teacher(Employee):
 
 # 2. METHOD OVERLOADING (Python way)
 class Calculator:
-    def add(self, a=None, b=None, c=None):
-        if a is not None and b is not None and c is not None:
-            print("Addition =", a + b + c)
-        elif a is not None and b is not None:
-            print("Addition =", a + b)
-        else:
-            print("Nothing to add")
+    def add(self, a=0, b=0, c=0):
+        return a + b + c
 
 # 3. OPERATOR OVERLOADING
 class Number:
@@ -186,10 +181,11 @@ print("Method Overriding:")
 t = Teacher()
 t.get_designation()
 
-print("\nMethod Overloading:")
-c = Calculator()
-c.add(10, 20)
-c.add(5, 10, 15)
+print("Method Overloading:")
+calc = Calculator()
+print(calc.add(10))          
+print(calc.add(10, 20))      
+print(calc.add(10, 20, 30))
 
 print("\nOperator Overloading:")
 n1 = Number(30)
