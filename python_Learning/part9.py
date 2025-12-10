@@ -1,4 +1,4 @@
-# OOP-Encapsulation, Abstraction, Inheritance, Polymorphism
+# OOP-Encapsulation, Inheritance, Abstraction, Polymorphism
 
 # Encapsulation
 
@@ -35,4 +35,7 @@ print(s1.get_age())
 print(s1.get_marks())
 
 #-----------------------------
+
+# Inheritance
+
 
