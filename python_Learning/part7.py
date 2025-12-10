@@ -272,6 +272,68 @@ print(t.index(30))   # 2
 
 #----------------------------------------------
 
+# Set programs
+
+s = {10, 20, 30, 40}
+print(type(s))
+
+#----------------------------------------------
+
+s = {1, 2, 2, 3, 3, 3}
+print(s)   # Output: {1, 2, 3}
+
+#----------------------------------------------
+
+s = {10, 20}
+
+s.add(30)      # add one item
+s.update([40, 50])  # add multiple items
+
+print(s)
+
+#----------------------------------------------
+
+s = {10, 20, 30, 40}
+
+s.remove(20)   # removes 20, gives error if not found
+s.discard(50)  # no error even if 50 not found
+s.pop()        # removes a random element
+
+print(s)
+
+#----------------------------------------------
+
+a = {1, 2, 3}
+b = {3, 4, 5}
+
+print(a.union(b))       # {1, 2, 3, 4, 5}
+print(a | b)            # same as union
+
+#----------------------------------------------
+
+a = {1, 2, 3}
+b = {2, 3, 4}
+
+print(a.intersection(b))   # {2, 3}
+print(a & b)               # same
+
+#----------------------------------------------
+
+a = {1, 2, 3}
+b = {2, 3, 4}
+
+print(a.difference(b))   # {1}
+print(b.difference(a))   # {4}
+
+#----------------------------------------------
+
+a = {1, 2, 3}
+b = {2, 3, 4}
+
+print(a.symmetric_difference(b))   # {1, 4}
+
+#----------------------------------------------
+
 # Dictionary programs
 
 student = {
