@@ -140,6 +140,66 @@ print("Rectangle Area:", r.area())
 
 # Polymorphism
 
+# 1. METHOD OVERRIDING (Inheritance)
+class Employee:
+    def get_designation(self):
+        print("designation = Employee")
+
+class Teacher(Employee):
+    def get_designation(self):   # overriding
+        print("designation = Teacher")
+
+# 2. METHOD OVERLOADING (Python way)
+class Calculator:
+    def add(self, a=None, b=None, c=None):
+        if a is not None and b is not None and c is not None:
+            print("Addition =", a + b + c)
+        elif a is not None and b is not None:
+            print("Addition =", a + b)
+        else:
+            print("Nothing to add")
+
+# 3. OPERATOR OVERLOADING
+class Number:
+    def __init__(self, value):
+        self.value = value
+
+    def __add__(self, other):     # using + operator
+        return Number(self.value + other.value)
+
+    def show(self):
+        print("Value =", self.value)
+
+# 4. DUCK TYPING
+class Dog:
+    def make_sound(self):
+        print("Dog barks")
+
+class Cat:
+    def make_sound(self):
+        print("Cat meows")
+
+def sound(obj):
+    obj.make_sound()
+
+print("Method Overriding:")
+t = Teacher()
+t.get_designation()
+
+print("\nMethod Overloading:")
+c = Calculator()
+c.add(10, 20)
+c.add(5, 10, 15)
+
+print("\nOperator Overloading:")
+n1 = Number(30)
+n2 = Number(20)
+n3 = n1 + n2     # uses __add__
+n3.show()
+
+print("\nDuck Typing:")
+sound(Dog())
+sound(Cat())
 
 
 
