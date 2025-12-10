@@ -28,6 +28,12 @@ p.greet()
 
 #--------------------------------
 
+class Animal:
+    def __init__(self):         #Constructor(default)
+        print("An Animal is created!")
+
+#--------------------------------
+
 class Student:
     def __init__(self, name , age):  #Constructor (init)
         self.name = name
@@ -39,7 +45,7 @@ print(s1.name, s1.age)
 #--------------------------------
 
 class Dog:
-    def __init__(self, name):         #Constructor
+    def __init__(self, name):         #Constructor(parameterized)
         self.name = name
 
     def bark(self):                    #Method
