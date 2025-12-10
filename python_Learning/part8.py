@@ -9,7 +9,6 @@ print(s1)
 #--------------------------------
 
 class Car:
-
     brand = "Toyota"  #properties/attributes
     color = "Red"
 
@@ -69,5 +68,15 @@ print(m2.brand, m2.price)
 
 #--------------------------------
 
+class Student:
+    col_name = "ABC College"   #class property
 
+    def __init__(self, name , age):
+        self.name = name           #instance property
+        self.age = age
+
+s1 = Student("Syed", 23)
+print(s1.name)
+
+#--------------------------------
 
