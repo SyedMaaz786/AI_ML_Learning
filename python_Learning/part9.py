@@ -38,4 +38,68 @@ print(s1.get_marks())
 
 # Inheritance
 
+# ---------- 1. SINGLE INHERITANCE ----------
+class Animal:
+    def sound(self):
+        print("Animal makes a sound")
+
+class Dog(Animal):      # Single inheritance
+    def bark(self):
+        print("Dog barks")
+
+
+# ---------- 2. MULTILEVEL INHERITANCE ----------
+class BabyDog(Dog):      # Multilevel inheritance (Animal -> Dog -> BabyDog)
+    def small_bark(self):
+        print("Baby dog barks softly")
+
+
+# ---------- 3. HIERARCHICAL INHERITANCE ----------
+class Cat(Animal):       # Cat and Dog both inherit from Animal
+    def meow(self):
+        print("Cat meows")
+
+class Cow(Animal):       # Another child of Animal
+    def moo(self):
+        print("Cow moos")
+
+
+# ---------- 4. MULTIPLE INHERITANCE ----------
+class Flyer:
+    def fly(self):
+        print("Can fly high")
+
+class Bird(Animal, Flyer):   # Multiple inheritance (Animal + Flyer)
+    def nature(self):
+        print("Bird is an animal that can fly")
+
+print("Single Inheritance:")
+d = Dog()
+d.sound()
+d.bark()
+
+print("\nMultilevel Inheritance:")
+bd = BabyDog()
+bd.sound()
+bd.bark()
+bd.small_bark()
+
+print("\nHierarchical Inheritance:")
+c = Cat()
+c.sound()
+c.meow()
+
+cw = Cow()
+cw.sound()
+cw.moo()
+
+print("\nMultiple Inheritance:")
+b = Bird()
+b.sound()
+b.fly()
+b.nature()
+
+#-----------------------------
+
+
 
