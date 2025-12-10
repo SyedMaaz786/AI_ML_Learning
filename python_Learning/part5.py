@@ -30,6 +30,14 @@ for ch in word:
         count += 1
 print("Number of vowels in the word are:", count)
 
+# --------------------------------
+
+n = int(input("Enter the number: "))
+sum = 0
+for i in range(1, n+1):
+    sum += i
+print("Sum =", sum)
+
 # WHILE LOOP Examples
 
 i = 1
