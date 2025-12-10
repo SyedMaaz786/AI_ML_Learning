@@ -101,5 +101,39 @@ b.nature()
 
 #-----------------------------
 
+# Abstraction
+
+from abc import ABC, abstractmethod
+
+# Abstract Class
+class Shape(ABC):
+
+    @abstractmethod
+    def area(self):
+        pass 
+
+# Child Class 1
+class Square(Shape):
+    def __init__(self, side):
+        self.side = side
+
+    def area(self):
+        return self.side * self.side
+
+# Child Class 2
+class Rectangle(Shape):
+    def __init__(self, l, b):
+        self.l = l
+        self.b = b
+
+    def area(self):
+        return self.l * self.b
+
+
+s = Square(5)
+print("Square Area:", s.area())
+
+r = Rectangle(4, 6)
+print("Rectangle Area:", r.area())
 
 
