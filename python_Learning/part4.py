@@ -45,3 +45,17 @@ if n % 2 == 0:
     print(f"{n} is even")
 else: 
     print(f"{n} is odd")
+
+
+# --------------------------------------------------
+
+username = input("Enter username: ")
+password = input("Enter password: ")
+
+if username == "admin" and password == "pass":
+    print("LOGIN successful")
+else:
+    if username != "admin":
+        print("Invalid username")
+    else:
+        print("Invalid password")
