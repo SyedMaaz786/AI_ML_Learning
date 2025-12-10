@@ -21,6 +21,15 @@ for i in range(1 , 11):
     else:
         print(f"{i} is odd") 
 
+# --------------------------------
+
+word = "artificial"
+count = 0
+for ch in word:
+    if (ch == 'a', ch == 'e', ch == 'i', ch == 'o', ch == 'u'):
+        count += 1
+print("Number of vowels in the word are:", count)
+
 # WHILE LOOP Examples
 
 i = 1
