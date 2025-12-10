@@ -1,4 +1,4 @@
-# Classes and objects in Python
+# OOP-Classes and objects in Python
 
 class Student:
     pass   # empty class
@@ -79,4 +79,42 @@ s1 = Student("Syed", 23)
 print(s1.name)
 
 #--------------------------------
+
+class Student:
+    school_name = "ABC School"
+
+    # INSTANCE METHOD
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def show_details(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+
+    # CLASS METHOD
+    @classmethod
+    def change_school(cls, new_name):
+        cls.school_name = new_name
+
+    # STATIC METHOD
+    @staticmethod
+    def welcome_message():
+        print("Welcome to the Student Portal!")
+
+# Creating object (instance)
+s1 = Student("Maaz", 22)
+
+# Calling instance method
+s1.show_details()
+
+# Calling class method
+Student.change_school("XYZ School")
+print("Updated School Name:", Student.school_name)
+
+# Calling static method
+Student.welcome_message()
+
+#--------------------------------
+
 
