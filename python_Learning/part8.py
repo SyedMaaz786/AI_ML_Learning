@@ -81,7 +81,7 @@ print(s1.name)
 #--------------------------------
 
 class Student:
-    school_name = "ABC School"
+    school_name = "ABC School"  # CLASS PROPERTY
 
     # INSTANCE METHOD
     def __init__(self, name, age):
@@ -93,12 +93,12 @@ class Student:
         print("Age:", self.age)
 
     # CLASS METHOD
-    @classmethod
+    @classmethod                      #decorator(@classmethod)
     def change_school(cls, new_name):
         cls.school_name = new_name
 
     # STATIC METHOD
-    @staticmethod
+    @staticmethod                     #decorator(@staticmethod)
     def welcome_message():
         print("Welcome to the Student Portal!")
 
