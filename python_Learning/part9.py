@@ -22,7 +22,7 @@ class Student:
     def set_marks(self, new_marks):
         self.__marks = new_marks
 
-s1 = Student("Rahul", 20, 85)
+s1 = Student("Maaz", 20, 85)
 
 print(s1.name)            # public
 print(s1.get_age())       # protected (via getter)
@@ -135,5 +135,11 @@ print("Square Area:", s.area())
 
 r = Rectangle(4, 6)
 print("Rectangle Area:", r.area())
+
+#-----------------------------
+
+# Polymorphism
+
+
 
 
