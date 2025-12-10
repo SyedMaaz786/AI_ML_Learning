@@ -270,4 +270,85 @@ t = (10, 20, 30, 20, 20)
 print(t.count(20))   # 3
 print(t.index(30))   # 2
 
+#----------------------------------------------
+
+# Dictionary programs
+
+student = {
+    "name": "Maaz",
+    "age": 22,
+    "course": "Python"
+}
+
+print(type(student))
+
+#----------------------------------------------
+
+student = {"name": "Maaz", "age": 22}
+
+print(student["name"])   # Maaz
+print(student["age"])    # 22
+
+#----------------------------------------------
+
+student = {"name": "Maaz"}
+
+print(student.get("age"))        # None (no error)
+print(student.get("age", "N/A")) # N/A
+
+#----------------------------------------------
+
+student = {"name": "Maaz", "age": 22} # Update value
+
+student["age"] = 23
+print(student)
+
+#----------------------------------------------
+
+student = {"name": "Maaz"} # Add new key-value pair
+
+student["city"] = "Hyderabad"
+print(student)
+
+#----------------------------------------------
+
+student = {"name": "Maaz", "age": 22, "city": "Hyderabad"}
+
+student.pop("age")     # remove by key
+student.popitem()      # removes last inserted item
+del student["name"]    # delete key
+
+print(student)
+
+#----------------------------------------------
+
+student = {"name": "Maaz", "age": 22}
+
+for key in student:
+    print(key)
+for value in student.values():
+    print(value)
+for key, value in student.items():
+    print(key, "=", value)
+
+#----------------------------------------------
+
+students = {
+    "student1": {"name": "Maaz", "age": 22}, # Nested dictionary
+    "student2": {"name": "Ali", "age": 20}
+}
+
+print(students["student1"]["name"])  # Maaz
+
+#----------------------------------------------
+
+student = {"name": "Maaz", "age": 22}
+
+student.update({"age": 23, "city": "Hyderabad"})
+
+print(student)
+
+#----------------------------------------------
+
+
 
