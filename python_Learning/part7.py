@@ -179,3 +179,19 @@ b = [4, 5]
 
 a.extend(b)
 print(a)  # [1, 2, 3, 4, 5]
+
+#----------------------------------------------
+
+nums = [10, 20, 30, 40, 50]  #Linear Search
+
+x = 30
+indx = 0
+
+for val in nums:
+    if val == x:
+        print(f"Found at index {indx}")
+        break
+    indx += 1
+
+#----------------------------------------------
+
