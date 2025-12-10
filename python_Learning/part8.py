@@ -29,7 +29,7 @@ p.greet()
 #--------------------------------
 
 class Student:
-    def __init__(self, name , age):
+    def __init__(self, name , age):  #Constructor (init)
         self.name = name
         self.age = age
 
@@ -37,5 +37,18 @@ s1 = Student("Maaz", 22)
 print(s1.name, s1.age)
 
 #--------------------------------
+
+class Dog:
+    def __init__(self, name):         #Constructor
+        self.name = name
+
+    def bark(self):                    #Method
+        print(self.name, "is barking!")
+
+d1 = Dog("Tommy")
+d1.bark()
+
+#--------------------------------
+
 
 
