@@ -56,3 +56,7 @@ print(result)
 
 # -------------------------------------------
 
+# lambda FUNCTIONS - It is a small anonymous function, which does not require a def keyword.
+
+add = lambda a, b: a + b     
+print(add(2,3))
