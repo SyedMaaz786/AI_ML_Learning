@@ -5,7 +5,6 @@ for i in range(1, 6):
 
 # --------------------------------
 
-
 for ch in "Maaz":
     print(ch)
 
@@ -30,7 +29,6 @@ while i <= 5:
     print(i)
     i += 1     
 
-
 # --------------------------------
 
 i = 5
@@ -39,14 +37,12 @@ while i >= 1:
     print(i)
     i -= 1
 
-
 # --------------------------------
 
 word = ""
 
 while word != "stop":
     word = input("Type something (type 'stop') to end")
-
 
 # --------------------------------
 
@@ -65,4 +61,13 @@ while(i <=10):
     i += 1
 
 # --------------------------------
+
+i = 1
+
+while i <= 10:
+    if i == 6:
+        break
+    print(i)
+    i += 1
+
 
