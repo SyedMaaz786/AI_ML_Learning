@@ -34,3 +34,8 @@ f.write("Adding using a+ mode.\n")
 f.seek(0)
 print(f.read())
 f.close()
+
+# x → create new file (fails if exists)
+f = open("sample2.txt", "x")
+f.write("Created using x mode.\n")
+f.close()
