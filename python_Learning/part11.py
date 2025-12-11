@@ -105,4 +105,9 @@ print(freq)
 gen = (i for i in range(5))  # generate output in the form of generator object
 print(gen)
 
+#----------------------------------------------------------------
+
+gen = (n for n in range(10) if n % 2 == 0) 
+print(list(gen))                           # So we do type casting to convert it into list to see the output
+
 
