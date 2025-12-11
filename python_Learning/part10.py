@@ -39,3 +39,8 @@ f.close()
 f = open("sample2.txt", "x")
 f.write("Created using x mode.\n")
 f.close()
+
+# wb → write binary
+f = open("binary.bin", "wb")
+f.write(b"Binary data from wb mode")
+f.close()
