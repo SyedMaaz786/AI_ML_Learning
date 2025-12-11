@@ -47,7 +47,7 @@ data = {
 
 # Writing JSON to file using dump()
 with open("data.json", "w") as f:
-    json.dump(data, f)
+    json.dump(data, f, indent=4)  # indent for pretty printing
 
 
 # Read JSON back using load()
