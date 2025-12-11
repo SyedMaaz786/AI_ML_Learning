@@ -62,3 +62,11 @@ f = open("binary2.bin", "rb+")
 print(f.read())
 f.write(b"\nMore binary data from rb+ mode")
 f.close()
+
+# WITH KEYWORD 
+
+with open("sample.txt", "w") as f:
+    f.write("This file was created using the with keyword.\n")
+
+with open("sample.txt", "r") as f:
+    print(f.read())
