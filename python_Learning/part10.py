@@ -14,7 +14,6 @@ f.seek(0)
 print(f.readlines())   # reads all lines into a list
 f.close()
 
-
 # a → append
 f = open("sample.txt", "a")
 f.write("Appending using a mode.\n")
