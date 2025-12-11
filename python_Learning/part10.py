@@ -28,3 +28,9 @@ f.seek(0)
 print(f.read())
 f.close()
 
+# a+ → append + read
+f = open("sample.txt", "a+")
+f.write("Adding using a+ mode.\n")
+f.seek(0)
+print(f.read())
+f.close()
