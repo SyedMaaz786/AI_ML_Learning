@@ -1,4 +1,4 @@
-# File Modes in Python
+# File Handling Modes
 
 # w → write (creates or overwrites)
 f = open("sample.txt", "w")
