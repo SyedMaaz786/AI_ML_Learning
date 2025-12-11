@@ -14,4 +14,16 @@ else:
     print("Division successful:", result)   
 
 finally:
-    print("Program finished.")            
+    print("Program finished.")  
+
+#------------------------------------------------------------------
+
+# Comprehensions - The process of creating a new sequence from an existing one in a single line of code.
+
+# List Comprehension
+
+nums = [i for i in range(5)]
+print(nums)
+
+#----------------------------------------------------------------
+
