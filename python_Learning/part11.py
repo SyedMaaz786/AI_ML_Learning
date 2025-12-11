@@ -100,3 +100,9 @@ word = "hello"
 freq = {char: word.count(char) for char in word}
 print(freq)
 
+# Generator Comprehension - It is just like a list comprehension but, Uses parentheses ( ) instead of brackets [ ]
+
+gen = (i for i in range(5))  # generate output in the form of generator object
+print(gen)
+
+
