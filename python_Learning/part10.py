@@ -7,8 +7,13 @@ f.close()
 
 # r → read
 f = open("sample.txt", "r")
-print(f.read())
+print(f.read())        # reads the entire file
+f.seek(0)
+print(f.readline())    # reads the first line
+f.seek(0)
+print(f.readlines())   # reads all lines into a list
 f.close()
+
 
 # a → append
 f = open("sample.txt", "a")
