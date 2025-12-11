@@ -10,3 +10,8 @@ f = open("sample.txt", "r")
 print(f.read())
 f.close()
 
+# a → append
+f = open("sample.txt", "a")
+f.write("Appending using a mode.\n")
+f.close()
+
