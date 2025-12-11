@@ -31,3 +31,9 @@ squares = [i*i for i in range(5)]
 print(squares)
 
 #----------------------------------------------------------------
+
+words = ["hello", "maaz", "python"]
+upper_words = [w.upper() for w in words]
+print(upper_words)
+
+#----------------------------------------------------------------
