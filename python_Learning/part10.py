@@ -56,3 +56,9 @@ f.write(b"Binary data from wb+ mode")
 f.seek(0)
 print(f.read())
 f.close()
+
+# rb+ → read + write binary
+f = open("binary2.bin", "rb+")
+print(f.read())
+f.write(b"\nMore binary data from rb+ mode")
+f.close()
