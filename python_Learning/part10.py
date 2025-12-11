@@ -15,3 +15,9 @@ f = open("sample.txt", "a")
 f.write("Appending using a mode.\n")
 f.close()
 
+# r+ → read + write (keeps old content)
+f = open("sample.txt", "r+")
+print(f.read())
+f.write("Added using r+ mode.\n")
+f.close()
+
