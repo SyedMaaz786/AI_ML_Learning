@@ -96,3 +96,7 @@ print(even_square)
 
 #----------------------------------------------------------------
 
+word = "hello"
+freq = {char: word.count(char) for char in word}
+print(freq)
+
