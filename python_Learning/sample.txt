@@ -1,0 +1,4 @@
+This is a sample text file.
+It contains dummy data for file handling operations.
+You can read, write, append, and perform other actions using Python.
+Enjoy learning file handling!
