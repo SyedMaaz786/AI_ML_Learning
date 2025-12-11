@@ -77,3 +77,7 @@ print(unique_nums)
 
 #----------------------------------------------------------------
 
+# Dictionary Comprehension
+
+d = {i: i*i for i in range(5)}
+print(d)
