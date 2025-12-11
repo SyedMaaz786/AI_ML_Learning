@@ -70,3 +70,11 @@ with open("sample.txt", "w") as f:
 
 with open("sample.txt", "r") as f:
     print(f.read())
+
+    # DELETE FILES
+
+import os
+
+os.remove("binary.bin")
+os.remove("binary2.bin")
+os.remove("with_example.txt")
