@@ -21,3 +21,10 @@ print(f.read())
 f.write("Added using r+ mode.\n")
 f.close()
 
+# w+ → write + read (clears old content)
+f = open("sample.txt", "w+")
+f.write("New content from w+ mode.\n")
+f.seek(0)
+print(f.read())
+f.close()
+
