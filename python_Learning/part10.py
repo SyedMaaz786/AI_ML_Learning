@@ -44,3 +44,8 @@ f.close()
 f = open("binary.bin", "wb")
 f.write(b"Binary data from wb mode")
 f.close()
+
+# rb → read binary
+f = open("binary.bin", "rb")
+print(f.read())
+f.close()
