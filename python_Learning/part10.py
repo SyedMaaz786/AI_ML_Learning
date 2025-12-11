@@ -2,7 +2,9 @@
 
 # w → write (creates or overwrites)
 f = open("sample.txt", "w")
-f.write("Writing using w mode.\n")
+f.write("Writing using write mode.\n")
+f.writelines = ["Writing using writelines mode.\n"
+             "Second line using writelines mode.\n"]
 f.close()
 
 # r → read
