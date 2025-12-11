@@ -81,3 +81,12 @@ print(unique_nums)
 
 d = {i: i*i for i in range(5)}
 print(d)
+
+#----------------------------------------------------------------
+
+names = ["Maaz", "Irfan", "Rizwan"]
+lengths = {name: len(name) for name in names}
+print(lengths)
+
+#----------------------------------------------------------------
+
