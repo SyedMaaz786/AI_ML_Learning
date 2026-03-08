@@ -1,6 +1,6 @@
-data/
 *.csv
 *.pt
 *.pth
-*.tar.gz
+data/
 .ipynb_checkpoints/
+.virtual_documents/
