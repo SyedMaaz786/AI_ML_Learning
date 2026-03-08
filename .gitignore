@@ -1,6 +1,6 @@
 data/
-*.tar.gz
+*.csv
 *.pt
 *.pth
-__pycache__/
+*.tar.gz
 .ipynb_checkpoints/
