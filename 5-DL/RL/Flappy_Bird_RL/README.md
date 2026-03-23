@@ -18,3 +18,6 @@ python agent.py
 
 - Set `LOAD_MODEL = False` to train the agent  
 - Set `LOAD_MODEL = True` to play using the trained model
+
+Trained model (`.pth`) is not included due to size limits.
+You can train the model using the provided code.
