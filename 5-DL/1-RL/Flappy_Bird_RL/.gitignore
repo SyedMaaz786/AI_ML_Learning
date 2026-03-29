@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual env
+venv/
+env/
+
+# Models
+*.pth
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+
+# Model
+*.pth
+model.pth
+flappy/lib/
+venv/
+__pycache__/
