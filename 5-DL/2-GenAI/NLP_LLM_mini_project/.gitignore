@@ -1,0 +1,18 @@
+# Jupyter
+.ipynb_checkpoints/
+.virtual_documents/
+
+# Data
+*.csv
+
+# Models
+results/
+saved_summary_model/
+
+# Python
+__pycache__/
+*.pyc
+
+# Env
+venv/
+.env
