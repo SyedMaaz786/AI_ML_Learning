@@ -1,0 +1,18 @@
+# Ignore Jupyter outputs/checkpoints
+.ipynb_checkpoints/
+
+# Ignore data folders
+data/
+vector_store/
+pdfs/
+
+# Ignore Chroma DB files
+*.sqlite3
+
+# Ignore temp / cache
+__pycache__/
+*.pyc
+
+# Ignore virtual env (if any)
+venv/
+.env
