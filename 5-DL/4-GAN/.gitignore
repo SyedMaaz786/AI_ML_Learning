@@ -1,0 +1,15 @@
+# Ignore virtual environment
+gan_env/
+
+# Ignore dataset
+img_align_celeba/
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Ignore system files
+.DS_Store
+
+# Ignore Python cache
+__pycache__/
+*.pyc
