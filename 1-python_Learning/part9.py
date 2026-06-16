@@ -105,37 +105,25 @@ b.nature()
 
 from abc import ABC, abstractmethod
 
-# Abstract Class
-class Shape(ABC):
+class Animal(ABC):
 
-    @abstractmethod
-    def area(self):
-        pass 
+    @abstractmethod  # Here we are simply pass, and implement the details in the child class where, ie what is abstraction
+    def make_sound(self):
+        pass
 
-# Child Class 1
-class Square(Shape):
-    def __init__(self, side):
-        self.side = side
+class Lion(Animal):
+    def make_sound(self):
+        print("Roars")
 
-    def area(self):
-        return self.side * self.side
+class Cow(Animal):
+    def make_sound(self):
+        print("Moo")
 
-# Child Class 2
-class Rectangle(Shape):
-    def __init__(self, l, b):
-        self.l = l
-        self.b = b
+l = Lion()
+l.make_sound()
 
-    def area(self):
-        return self.l * self.b
-
-
-s = Square(5)
-print("Square Area:", s.area())
-
-r = Rectangle(4, 6)
-print("Rectangle Area:", r.area())
-
+c = Cow()
+c.make_sound()
 #-----------------------------
 
 # Polymorphism
@@ -165,7 +153,7 @@ class Number:
     def show(self):
         print("Value =", self.value)
 
-# 4. DUCK TYPING
+# 4. DUCK TYPING (2 classes same fnx)
 class Dog:
     def make_sound(self):
         print("Dog barks")
@@ -174,8 +162,7 @@ class Cat:
     def make_sound(self):
         print("Cat meows")
 
-def sound(obj):
-    obj.make_sound()
+
 
 print("Method Overriding:")
 t = Teacher()
@@ -193,9 +180,10 @@ n2 = Number(20)
 n3 = n1 + n2     # uses __add__
 n3.show()
 
-print("\nDuck Typing:")
-sound(Dog())
-sound(Cat())
+d = Dog() 
+d.make_sound()
 
+c = Cat()
+c.make_sound()
 
 
